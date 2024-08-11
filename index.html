@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Clock</h1>
+    </header>
+    <main>
+        <section id="liveClock">
+            <h2>Current Time</h2>
+            <div id="clock"></div>
+        </section>
+
+        <section id="alarms">
+            <h2>Set Alarm</h2>
+            <input type="time" id="alarmTime">
+            <button onclick="setAlarm()">Set Alarm</button>
+            <div id="alarmMessage"></div>
+        </section>
+
+        <section id="timers">
+            <h2>Timer</h2>
+            <input type="number" id="timerInput" placeholder="Seconds">
+            <button onclick="startTimer()">Start Timer</button>
+            <div id="timerDisplay"></div>
+        </section>
+
+        <section id="worldTime">
+            <h2>World Time Zones</h2>
+            <div id="worldClocks">
+                <!-- World clocks will be added here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
